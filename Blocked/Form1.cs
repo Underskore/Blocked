@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace Blocked
 {
-    public partial class Form1 : Form
+    public partial class frm : Form
     {
-        public Form1()
+        public frm()
         {
             InitializeComponent();
         }
@@ -19,30 +19,17 @@ namespace Blocked
         private void Form1_Load(object sender, EventArgs e)
         {
             IO.get get = new IO.get();
-            string[] objects = get.objects("test.txt");
-            foreach (string sr in objects)
-                textBox1.Text += sr + "\r\n";
+            get.objects("test.txt");
+            for (int i = 0; i < get.objs.Count; i++)
+            {
+                textBox1.Text += get.objs[i].oname + "\r\n";
+                textBox1.Text += "    * class: " + get.objs[i].oclass + "\r\n";
+                textBox1.Text += "    * text: " + get.objs[i].otext + "\r\n";
+                textBox1.Text += "    * size: " + get.objs[i].osize + "\r\n";
+                textBox1.Text += "    * position: " + get.objs[i].opoint + "\r\n";
+            
+            }
+                
         }
     }
 }
-
-
-/*
-
-
-
-
-
-
-
-
-[objects]
-  
- 
-
-
-[/objects]
-
-
-
-*/
