@@ -42,8 +42,8 @@ namespace Blocked
                 while (line != "objects[") line = sr.ReadLine();
                 while (line != "]") { line = sr.ReadLine(); if (line != "]") { objects[i] = line; i++; } }
                 return objects;
-            }
-
+           }
+           
             public List<Object> objs = new List<Object>();
             private void addObject(string oclass, string oname, Point opoint, Size osize, string otext = "", string osource = "")
             {
@@ -80,7 +80,7 @@ namespace Blocked
                         break;
 
                     case "link":
-                        osource = getObjectMember(obj, "source");
+                            osource = getObjectMember(obj, "source");
                         addObject(oclass, oname, opoint, osize, osource);
                         break;
                 }
@@ -116,6 +116,8 @@ namespace Blocked
                 Size sz = new Size(x,y);
                 return sz;
             }
+
+            
         }
 
     }

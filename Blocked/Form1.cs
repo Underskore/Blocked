@@ -29,7 +29,7 @@ namespace Blocked
                 textBox1.Text += "    * position: " + get.objs[i].opoint + "\r\n";
             
             }
-                
+
         }
     }
 }

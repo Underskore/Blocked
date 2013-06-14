@@ -36,17 +36,17 @@
             this.textBox1.Location = new System.Drawing.Point(12, 12);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(468, 392);
+            this.textBox1.Size = new System.Drawing.Size(456, 265);
             this.textBox1.TabIndex = 0;
             // 
             // frm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(495, 417);
+            this.ClientSize = new System.Drawing.Size(484, 295);
             this.Controls.Add(this.textBox1);
             this.Name = "frm";
-            this.Text = "Blocked _K";
+            this.Text = "Blocked _k";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
